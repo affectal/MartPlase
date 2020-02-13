@@ -1,23 +1,20 @@
+@import 'fonts';
 @import 'vars';
 @import 'global';
-@import 'fonts';
-// HEADER
-.header {
+// HEADER start
+// TOP
+.header__top {
     background-color: #eef1f3;
 }
 
-.header__inner {
+.header__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    &-wrapper {
-        display: flex;
-        align-items: center;
-    }
 }
 
-.header__logo-img {
+.header-top__logo-img {
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -31,7 +28,12 @@
     }
 }
 
-.header__btn {
+.header-top__inner-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__top-btn {
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
@@ -40,18 +42,18 @@
     border: none;
     border-radius: 18px;
     background-color: $blue;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     color: #fff;
     margin-right: 45px;
     cursor: pointer;
 }
 
-.header__icons {
+.header__top-icons {
     display: flex;
     align-items: center;
     margin-right: 45px;
     .lnr {
         display: inline-block;
-        fill: currentColor;
         width: 20px;
         height: 20px;
         color: #7e8fa1;
@@ -62,27 +64,29 @@
     }
 }
 
-.header__content {
-    max-width: 100px;
-    width: 100%;
-    line-height: 22px;
-    &-name {
-        font-size: 16px;
-        font-weight: 500;
-        color: $text;
-    }
-    &-balace {
-        font-size: 15px;
-        color: $blue;
-    }
-}
-
 .avatar {
     margin-right: 20px;
 }
 
-// TOP
-.top__inner {
+.header__top-content {
+    max-width: 100px;
+    width: 100%;
+    line-height: 22px;
+}
+
+.header-top__content-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: $text;
+}
+
+.header-top__content-balace {
+    font-size: 15px;
+    color: $blue;
+}
+
+// BOTTOM
+.header__bottom-inner {
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -111,7 +115,7 @@
     }
 }
 
-.top__inner-form {
+.header-bottom__inner-form {
     max-width: 360px;
     width: 100%;
     position: relative;
@@ -144,7 +148,6 @@
         cursor: pointer;
         .lnr {
             display: inline-block;
-            fill: currentColor;
             width: 15px;
             height: 15px;
             color: #fff;
@@ -152,7 +155,8 @@
     }
 }
 
-// SLIDER
+// HEADER end
+// SLIDER start
 .slider {
     background: linear-gradient( 180deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
     opacity: 0.8;
@@ -189,6 +193,7 @@
         border: 1px solid #fff;
         border-radius: 27.5px;
         background-color: transparent;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
         color: #fff;
         font-size: 16px;
         font-weight: 400;
@@ -205,38 +210,48 @@
     }
 }
 
-// SEARCH
+// SLIDER end
+// SEARCH start
 .search {
     margin-bottom: 120px;
 }
 
 .search__inner {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
     width: 100%;
     min-height: 135px;
-    padding: 0 40px;
-    form {
-        width: 805px;
-        height: 55px;
-        border: 1px solid #dcdcdc;
-        border-radius: 3px;
-        padding: 18px 30px;
-    }
+    padding: 40px;
     input {
-        border: none;
+        max-width: 610px;
+        width: 100%;
+        border: 1px solid #dcdcdc;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        padding: 20px 27px;
+        color: #676767;
+        margin: 0;
     }
-    *[dir="rtl"] .categories,
-     :root:lang(ar) .categories,
-     :root:lang(iw) .categories {
-        background-position: left .7em top 50%, 0 0;
-        padding: .6em .8em .5em 1.4em;
+    select {
+        appearance: none;
+        border: 1px solid #dcdcdc;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 20px 70px 20px 20px;
+        margin-right: 30px;
+        color: #555;
+    }
+    button {
+        width: 225px;
+        height: 55px;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 4px;
+        border: none;
     }
 }
 
 .lnr {
     display: inline-block;
-    fill: currentColor;
     width: 12px;
     height: 12px;
     color: #676767;

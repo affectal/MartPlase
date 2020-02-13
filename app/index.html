@@ -13,122 +13,129 @@
 <body>
 
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="#" class="header__logo">
-                    <div class="header__logo-img">
-                        <img src="images/logo.png" alt="">Mart<span>Place</span>
-                    </div>
-                </a>
-                <div class="header__inner-wrapper">
-                    <button class="header__btn" type="submit">Become a Seller</button>
-                    <div class="header__icons">
-                        <a href="#">
-                            <svg class="lnr lnr-alarm">
-                                <use xlink:href="#lnr-alarm"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg class="lnr">
-                                <use xlink:href="#lnr-envelope"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg class="lnr">
-                                <use xlink:href="#lnr-cart"></use>
-                            </svg>
-                        </a>
-                    </div>
+        <section class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <a href="#" class="header__top-logo">
+                        <div class="header-top__logo-img">
+                            <img src="images/logo.png" alt="">Mart<span>Place</span>
+                        </div>
+                    </a>
+                    <div class="header-top__inner-wrapper">
+                        <button class="header__top-btn" type="submit">Become a Seller</button>
+                        <div class="header__top-icons">
+                            <a href="#">
+                                <svg class="lnr lnr-alarm">
+                                    <use xlink:href="#lnr-alarm"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="lnr">
+                                    <use xlink:href="#lnr-envelope"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="lnr">
+                                    <use xlink:href="#lnr-cart"></use>
+                                </svg>
+                            </a>
+                        </div>
 
+                        <img class="avatar" src="images/avatar.png" alt="">
 
-                    <img class="avatar" src="images/avatar.png" alt="">
-
-                    <div class="header__content">
-                        <a class="header__content-name" href="#">
-                            Taofiq Hakim
-                        </a>
-                        <a class="header__content-balace" href="#">
-                            $20.45
-                        </a>
+                        <div class="header__top-content">
+                            <a class="header-top__content-name" href="#">
+                                Taofiq Hakim
+                            </a>
+                            <a class="header-top__content-balace" href="#">
+                                $20.45
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+        </section>
+        <section class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a href="#">home</a>
+                            </li>
+                            <li>
+                                <a href="#">all products</a>
+                            </li>
+                            <li>
+                                <a href="#">wordpress</a>
+                            </li>
+                            <li>
+                                <a href="#">festures</a>
+                            </li>
+                            <li>
+                                <a href="#">pages</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-bottom__inner-form ">
+                        <form>
+                            <input type="text " placeholder="Search product here..." required>
+                            <button type="submit ">
+                                <svg class="lnr">
+                                    <use xlink:href="#lnr-magnifier"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
-    <section class="top">
-        <div class="container">
-            <div class="top__inner">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li>
-                            <a href="#">home</a>
-                        </li>
-                        <li>
-                            <a href="#">all products</a>
-                        </li>
-                        <li>
-                            <a href="#">wordpress</a>
-                        </li>
-                        <li>
-                            <a href="#">festures</a>
-                        </li>
-                        <li>
-                            <a href="#">pages</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="top__inner-form ">
+
+    <main>
+
+        <section class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__inner-title">
+                        Create Your Own
+                    </div>
+                    <div class="slider__inner-subtitle">
+                        Digital Product Marketplace
+                    </div>
+                    <div class="slider__inner-text">
+                        MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+                    </div>
+                    <div class="slider__inner-btn ">
+                        <button type="button" data-filter=".category-all">View All Products</button>
+                        <button type="button" data-filter=".category-popular">Popular Products</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search">
+            <div class="container">
+                <div class="search__inner">
                     <form>
-                        <input type="text " placeholder="Search product here..." required>
-                        <button type="submit ">
-                            <svg class="lnr">
-                                <use xlink:href="#lnr-magnifier"></use>
-                            </svg>
+                        <input class="search" type="text" placeholder="Search your products..." required>
+                        <select class="categories" size="1" required>
+                            <option>All Categories</option>
+                            <option value="categories-1">categories-1</option>
+                            <option value="categories-2">categories-2</option>
+                            <option value="categories-3">categories-3</option>
+                            <option value="categories-4">categories-4</option>
+                        </select>
+                        <button type="submit">
+                            Search Now
                         </button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="slider">
-        <div class="container">
-            <div class="slider__inner">
-                <div class="slider__inner-title">
-                    Create Your Own
-                </div>
-                <div class="slider__inner-subtitle">
-                    Digital Product Marketplace
-                </div>
-                <div class="slider__inner-text">
-                    MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-                </div>
-                <div class="slider__inner-btn ">
-                    <button type="button" data-filter=".category-all">View All Products</button>
-                    <button type="button" data-filter=".category-popular">Popular Products</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="search">
-        <div class="container">
-            <div class="search__inner">
-                <form>
-                    <input class="search" type="text" placeholder="Search your products..." required>
-                    <select class="categories" size="1" required>
-                        <option>All Categories</option>
-                        <option value="categories-1">categories-1</option>
-                        <option value="categories-2">categories-2</option>
-                        <option value="categories-3">categories-3</option>
-                        <option value="categories-4">categories-4</option>
-                      </select>
-                    <button type="submit">
-                        Search Now
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
+
+
+    </main>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
