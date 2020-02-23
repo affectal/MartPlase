@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MartPlase</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,28 +18,16 @@
             <div class="container">
                 <div class="header__top-inner">
                     <a href="#" class="header__top-logo">
-                        <div class="header-top__logo-img">
+                        <div class="header__top-logo__img">
                             <img src="images/logo.png" alt="">Mart<span>Place</span>
                         </div>
                     </a>
-                    <div class="header-top__inner-wrapper">
-                        <button class="header__top-btn" type="submit">Become a Seller</button>
-                        <div class="header__top-icons">
-                            <a href="#">
-                                <svg class="lnr lnr-alarm">
-                                    <use xlink:href="#lnr-alarm"></use>
-                                </svg>
-                            </a>
-                            <a href="#">
-                                <svg class="lnr">
-                                    <use xlink:href="#lnr-envelope"></use>
-                                </svg>
-                            </a>
-                            <a href="#">
-                                <svg class="lnr">
-                                    <use xlink:href="#lnr-cart"></use>
-                                </svg>
-                            </a>
+                    <div class="header__top-inner__wrapper">
+                        <button class="header__top-btn" type="button">Become a Seller</button>
+                        <div class="header__top-icon">
+                            <a class="header__icon-bell header__icon" href="#"></a>
+                            <a class="header__icon-envelope header__icon" href="#"></a>
+                            <a class="header__icon-cart header__icon" href="#"></a>
                         </div>
 
                         <img class="avatar" src="images/avatar.png" alt="">
@@ -77,14 +66,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="header-bottom__inner-form ">
+                    <div class="header-bottom__inner-form">
                         <form>
-                            <input type="text " placeholder="Search product here..." required>
-                            <button type="submit ">
-                                <svg class="lnr">
-                                    <use xlink:href="#lnr-magnifier"></use>
-                                </svg>
-                            </button>
+                            <input type="text" placeholder="Search product here..." required>
+                            <button class="header__search" type="submit"></button>
                         </form>
                     </div>
                 </div>
@@ -227,11 +212,7 @@
                                             <span>634</span>
                                         </a>
                                     </div>
-
-                                    <div class="stars">
-                                        <div class="rate__star"></div>
-                                    </div>
-
+                                    <div class="rate__star"></div>
                                 </div>
                             </div>
                         </div>
@@ -394,6 +375,70 @@
 
                     </div>
                 </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <div class="product__top">
+                    <div class="product__top-title title">
+                        Newest Release Products
+                    </div>
+                    <div class="product__top-menu">
+                        <div class="top__menu-title">
+                            Filter by:
+                        </div>
+                        <div class="top__menu-icon">
+                            <img src="images/product-icon.png" alt="">
+                        </div>
+                    </div>
+                    <ul class="top__menu-list">
+                        <li>
+                            <a href="#">Trending items</a>
+                        </li>
+                        <li>
+                            <a href="#">Best seller</a>
+                        </li>
+                        <li>
+                            <a href="#">Best rating</a>
+                        </li>
+                        <li>
+                            <a href="#">Low price</a>
+                        </li>
+                        <li>
+                            <a href="#">High price</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="products__list">
+                    <ul>
+                        <li>
+                            <a href="#">Plugins</a>
+                        </li>
+                        <li>
+                            <a href="#">WordPress</a>
+                        </li>
+                        <li>
+                            <a href="#">Site Template</a>
+                        </li>
+                        <li>
+                            <a href="#">PSD Template</a>
+                        </li>
+                        <li>
+                            <a href="#">Joomla</a>
+                        </li>
+                        <li>
+                            <a href="#">User Interface</a>
+                        </li>
+                        <li>
+                            <a href="#">Landing Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Software</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
 
 
