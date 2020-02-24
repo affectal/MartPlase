@@ -13,6 +13,12 @@ a {
     text-decoration: none;
 }
 
+button,
+input,
+select {
+    outline: none;
+}
+
 a,
 p,
 ul,
@@ -20,6 +26,7 @@ li {
     padding: 0;
     margin: 0;
     list-style: none;
+    outline: none;
 }
 
 body {
