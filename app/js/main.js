@@ -3,7 +3,8 @@ $(function() {
 
     $('.rate__star').rateYo({
         rating: 5,
-        starWidth: "15px"
+        starWidth: "15px",
+        readOnly: true
     });
 
     $('.slider__items').slick({
@@ -18,5 +19,9 @@ $(function() {
     $('.product__top-menu').on('click', function() {
         $('.top__menu-list').slideToggle();
     });
+
+
+
+    var mixer = mixitup('.product__categories-inner');
 
 });
