@@ -13,6 +13,7 @@ $(function() {
         dots: false,
         arrows: true,
 
+
     });
 
 
@@ -22,7 +23,8 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: false,
-        arrows: true,
+        arrows: true
+
 
     });
 
@@ -33,6 +35,22 @@ $(function() {
 
 
 
-    var mixer = mixitup('.product__categories-inner');
+    $('.search__inner::before').on('click', function() {
+        $('.categories').slideToggle();
+    });
+
+
+    $('.feedback__inner').slick({
+        nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+        prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true
+
+
+    });
+
+    var mixer = mixitup('.product__inner');
 
 });
