@@ -1,5 +1,20 @@
 html {
     box-sizing: border-box;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
 }
 
 *,
@@ -14,16 +29,13 @@ a {
 }
 
 a,
-button {
-    transition: all .5s;
-    cursor: pointer;
-    border: none;
-}
-
 button,
 input,
 select {
     outline: transparent;
+    transition: all .5s;
+    cursor: pointer;
+    border: none;
 }
 
 a,
@@ -37,6 +49,7 @@ li {
 
 body {
     font-family: "Quicksand-Regular";
+    height: 100%;
 }
 
 .container {
