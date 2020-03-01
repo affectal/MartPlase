@@ -80,8 +80,8 @@
 
             <main>
 
-                <section class="login">
-                    <div class="login__route">
+                <section class="register">
+                    <div class="register__route">
                         <div class="container">
                             <div class="route__inner">
                                 <div class="route__link">
@@ -98,33 +98,35 @@
 
                         </div>
                     </div>
-                    <div class="login__form">
+                    <div class="register__form">
                         <div class="container">
-                            <div class="login__form-inner">
+                            <div class="register__form-inner">
                                 <div class="form__inner-top">
                                     <div class="form__inner-title">
-                                        Welcome Back
+                                        Create Your Account
                                     </div>
                                     <div class="form__inner-subtitle">
-                                        You can sign in with your username
+                                        Please fill the following fields with appropriate information to register a new MartPlace account.
                                     </div>
                                 </div>
                                 <div class="form__inner-form">
                                     <form>
+                                        <div class="input__title">Your Name</div>
+                                        <input class="input" type="text" placeholder="Enter your name..." required>
+                                        <div class="input__title">Email Address</div>
+                                        <input class="input" type="text" placeholder="Enter your email address..." required>
                                         <div class="input__title">Username</div>
                                         <input class="input" type="text" placeholder="Enter your username..." required>
                                         <div class="input__title">Password</div>
                                         <input class="input" type="text" placeholder="Enter your password..." required>
-                                        <input type="checkbox" id="check"><label for="check">Remember me</label><br>
-                                        <button class="login__btn" type="submit">Login Now</button>
+                                        <div class="input__title">Confirm Password</div>
+                                        <input class="input" type="text" placeholder="Enter your password..." required>
+                                        <button class="register__btn" type="submit">Register Now</button>
                                     </form>
                                 </div>
                                 <div class="form__inner-bottom">
-                                    <a class="bottom__link" href="#">
-                                        Lost your <span>username</span> or <span>password?</span>
-                                    </a>
-                                    <a class="bottom__link" href="register.html">
-                                        Don't have an <span>account?</span>
+                                    <a class="bottom__link" href="login.html">
+                                        Already have an account? <span>Login</span>
                                     </a>
                                 </div>
                             </div>

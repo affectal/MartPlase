@@ -1649,7 +1649,8 @@
 
 // footer end
 // login start
-.login {
+.login,
+.register {
     background-color: #eff1f5;
     &__route {
         background-image: linear-gradient( to left, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 40%, rgb(76, 31, 156) 100%);
@@ -1657,7 +1658,7 @@
         color: #fff;
         padding: 55px 0;
         .route__list {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             li {
                 display: inline-block;
                 font-size: 15px;
@@ -1675,6 +1676,7 @@
     }
     &__form {
         padding: 70px 0 120px;
+        font-size: 16px;
         color: #000;
         &-inner {
             background-color: #fff;
@@ -1684,25 +1686,95 @@
             margin: 0 auto;
             .form__inner-top {
                 text-align: center;
-                margin: 60px auto 30px;
+                padding: 55px 0 30px 0;
+                border-bottom: 1px solid #e8ebf0;
                 .form__inner-title {
                     font-size: 26px;
+                    margin-bottom: 25px;
                 }
-                .form__inner-subtitle {}
+                .form__inner-subtitle {
+                    color: #555;
+                    padding: 0 55px;
+                }
             }
-            .form__inner-form {}
+        }
+        .register__form-inner {
+            min-height: 915px;
         }
     }
 }
 
-.username {}
+.form__inner-form {
+    padding: 30px 50px 40px;
+    .input__title {
+        @include f500;
+        margin-bottom: 15px;
+    }
+    .input {
+        width: 100%;
+        background-color: #f4f5f8;
+        color: #898f96;
+        padding: 15px 20px;
+        margin-bottom: 30px;
+    }
+    label {
+        padding-left: 35px;
+        color: #555;
+        position: relative;
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $blue;
+            position: absolute;
+            left: 0;
+        }
+    }
+    #check {
+        display: none;
+        &:checked+label::before {
+            content: '\f00c';
+            font-family: 'icomoon';
+            font-size: 12px;
+            padding-top: 2.5px;
+            background-color: $blue;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .login__btn,
+    .register__btn {
+        width: 190px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: $blue;
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 30px;
+        &:hover {
+            background-color: #fff;
+            color: $blue;
+            border: 1px solid $blue;
+        }
+    }
+    .register__btn {
+        margin-top: 0;
+    }
+}
 
-.password {}
-
-.remember {}
-
-.form__inner-bottom {}
-
-.bottom__link {}
+.form__inner-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    a {
+        color: #898f96;
+        span {
+            color: $blue;
+        }
+    }
+}
 
 // login end
