@@ -1644,6 +1644,9 @@
     &-title {
         font-size: 15px;
         color: #999;
+        span {
+            color: #fff;
+        }
     }
 }
 
@@ -1655,7 +1658,7 @@
 .error,
 .terms {
     background-color: #eff1f5;
-    &__route {
+    .route {
         background-image: linear-gradient( to left, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 40%, rgb(76, 31, 156) 100%);
         min-height: 180px;
         color: #fff;
@@ -1666,6 +1669,7 @@
                 display: inline-block;
                 font-size: 15px;
                 margin-right: 5px;
+                color: #bfcad7;
                 a {
                     font-size: 15px;
                     color: #fff;
@@ -1683,6 +1687,8 @@
         color: #000;
         &-inner {
             background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
             max-width: 555px;
             width: 100%;
             min-height: 610px;
@@ -1769,7 +1775,8 @@
         &:hover {
             background-color: #fff;
             color: $blue;
-            border: 1px solid $blue;
+            // border: 1px solid $blue;
+            // box-shadow: 0px 0px 3px 0px $blue;
         }
     }
     .login__btn {
@@ -1804,16 +1811,21 @@
         margin: 55px 0 40px 0;
     }
     &-link {
-        padding: 16px 0;
+        line-height: 50px;
     }
 }
 
 // error end
 // terms&conditions start
+.terms {
+    padding-bottom: 120px;
+}
+
 .terms__inner {
     background-color: #fff;
     width: 100%;
-    margin: 60px 0 120px;
+    margin-top: 60px;
+    padding-bottom: 80px;
     border-radius: 4px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     font-size: 16px;
@@ -1831,3 +1843,85 @@
 }
 
 // terms&conditions end
+// creation start
+.creation {
+    background-color: #fff;
+    .route {
+        background-image: linear-gradient( to left, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 40%, rgb(76, 31, 156) 100%);
+        min-height: 280px;
+        padding: 90px 0 30px;
+        &__inner {
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__list {
+            margin-bottom: 20px;
+            li {
+                display: inline-block;
+                font-size: 15px;
+                margin-right: 5px;
+                color: #bfcad7;
+                a {
+                    font-size: 15px;
+                    color: #fff;
+                }
+            }
+        }
+        .route__title {
+            font-size: 30px;
+            line-height: 50px;
+            @include f500;
+            color: #f3f3f8;
+            margin-bottom: 70px;
+            span {
+                @include f300;
+            }
+        }
+    }
+    &__inner {
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 100px 0;
+            .creation__item-inner {
+                font-size: 16px;
+                max-width: 458px;
+                width: 100%;
+                padding: 30px 0;
+                .item__inner-title {
+                    font-size: 30px;
+                    color: #000;
+                }
+                .item__inner-text {
+                    line-height: 30px;
+                    color: #555;
+                    margin: 40px 0 25px;
+                }
+                .item__inner-link {
+                    text-align: center;
+                    width: 170px;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #fff;
+                    background-color: $blue;
+                    border-radius: 25px;
+                    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+                    &:hover {
+                        background-color: #fff;
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+    &__inner.bg {
+        background-color: #eff1f5;
+    }
+}
+
+// creation end
