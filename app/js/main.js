@@ -24,13 +24,24 @@ $(function() {
         slidesToScroll: 3,
         dots: false,
         arrows: true
-
-
     });
+
 
 
     $('.product__top-menu').on('click', function() {
         $('.top__menu-list').slideToggle();
+    });
+
+
+
+    $('.sidebar__item-title.cat').on('click', function() {
+        $('.sidebar__item-inner__wrapper').slideToggle();
+    });
+
+
+
+    $('.sidebar__item-title.fil').on('click', function() {
+        $('.sidebar__filter').slideToggle();
     });
 
 
@@ -42,10 +53,18 @@ $(function() {
         slidesToScroll: 1,
         dots: false,
         arrows: true
-
-
     });
 
     var mixer = mixitup('.product__inner');
+
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 200,
+        to: 500,
+        grid: true
+    });
 
 });
