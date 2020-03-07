@@ -35,13 +35,18 @@ $(function() {
 
 
     $('.sidebar__item-title.cat').on('click', function() {
-        $('.sidebar__item-inner__wrapper').slideToggle();
+        $('.sidebar__item-cat__wrapper').slideToggle();
     });
 
 
 
     $('.sidebar__item-title.fil').on('click', function() {
-        $('.sidebar__filter').slideToggle();
+        $('.sidebar__item-fil__wrapper').slideToggle();
+    });
+
+
+    $('.sidebar__item-title.range').on('click', function() {
+        $('.sidebar__item-range__wrapper').slideToggle();
     });
 
 
@@ -58,13 +63,26 @@ $(function() {
     var mixer = mixitup('.product__inner');
 
 
-    $(".js-range-slider").ionRangeSlider({
-        type: "double",
+    $('.js-range-slider').ionRangeSlider({
+        type: 'double',
         min: 0,
         max: 1000,
         from: 200,
         to: 500,
         grid: true
     });
+
+
+    $('.pagination-container').pagination({
+        dataSource: [1, 2, 3, 4, 5, 6, 7, ...195],
+        callback: function(data, pagination) {
+            // template method of yourself
+            var html = template(data);
+            $('.data-container').html(html);
+        }
+    })
+
+
+
 
 });

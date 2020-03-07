@@ -561,7 +561,7 @@
                     justify-content: space-between;
                     align-items: center;
                     padding: 0 20px;
-                    &-prise {
+                    &-price {
                         background-color: $blue;
                         padding: 0 20px;
                         color: #fff;
@@ -885,7 +885,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    .statistic-prise {
+                    .statistic-price {
                         font-family: "Quicksand";
                         font-weight: 500;
                         background-color: #e6f1fd;
@@ -2052,8 +2052,9 @@
             top: 37px;
         }
     }
-    &__item-inner__wrapper,
-    &__filter {
+    &__item-cat__wrapper,
+    &__item-fil__wrapper,
+    &__item-range__wrapper {
         display: none;
     }
     &__item-inner {
@@ -2064,6 +2065,9 @@
     &__item-list {
         li {
             font-size: 15px;
+        }
+        a {
+            color: #555;
             padding-left: 25px;
             position: relative;
             &::before {
@@ -2075,11 +2079,8 @@
                 left: 0;
                 top: 4px;
             }
-            a {
-                color: #555;
-                &:hover {
-                    color: $blue;
-                }
+            &:hover {
+                color: $blue;
             }
         }
         li+li {
@@ -2130,6 +2131,107 @@
                 content: '';
                 padding-top: 2.5px;
                 background-color: $blue;
+            }
+        }
+    }
+    .pricing-range {
+        form {
+            text-align: center;
+            padding: 30px 30px 40px;
+            .js-range-slider {
+                margin-bottom: 30px;
+            }
+            button {
+                width: 170px;
+                height: 44px;
+                border-radius: 22px;
+                background-color: $blue;
+                color: #fff;
+                font-size: 15px;
+                margin: 0 auto;
+                @include f500;
+                &:hover {
+                    background-color: #fff;
+                    color: $blue;
+                    border: 1px solid $blue;
+                }
+            }
+        }
+    }
+    .item__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        .new-product-item {
+            max-width: 263px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+            margin-bottom: 30px;
+        }
+        .product__content {
+            padding: 20px 20px 15px;
+            font-size: 15px;
+            color: #000;
+            &-title {
+                @include f700;
+            }
+            &-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &-box.one {
+                justify-content: start;
+                padding: 15px 0 20px;
+                img {
+                    margin-right: 8px;
+                }
+            }
+            &-box.two {
+                border-bottom: 1px solid #ececec;
+                padding-bottom: 15px;
+            }
+            &-box.three {
+                padding-top: 15px;
+            }
+            a {
+                color: #000;
+            }
+            .data-basket {
+                color: $blue;
+                padding-left: 25px;
+                position: relative;
+                &::before {
+                    content: '\e82e';
+                    font-family: 'Linearicons-Free';
+                    position: absolute;
+                    color: $blue;
+                    left: 0;
+                }
+            }
+            .data-price {
+                background-color: #e6f1fd;
+                padding: 8px 20px;
+                color: $blue;
+                @include f500;
+                border-radius: 15px;
+            }
+            .item__content-link {
+                color: #7347c1;
+                padding-left: 22px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../images/wordpress-icon.png);
+                    width: 16px;
+                    height: 16px;
+                    color: #7347c1;
+                    left: 0;
+                }
             }
         }
     }
