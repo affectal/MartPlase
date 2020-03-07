@@ -1355,7 +1355,7 @@
                         left: 0;
                     }
                 }
-                .massage {
+                .message {
                     position: relative;
                     padding-left: 25px;
                     &::before {
@@ -2158,7 +2158,7 @@
             }
         }
     }
-    .item__inner {
+    .item__inner-grid {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -2176,6 +2176,7 @@
             font-size: 15px;
             color: #000;
             &-title {
+                font-size: 18px;
                 @include f700;
             }
             &-box {
@@ -2200,7 +2201,7 @@
             a {
                 color: #000;
             }
-            .data-basket {
+            .basket {
                 color: $blue;
                 padding-left: 25px;
                 position: relative;
@@ -2212,7 +2213,7 @@
                     left: 0;
                 }
             }
-            .data-price {
+            .price {
                 background-color: #e6f1fd;
                 padding: 8px 20px;
                 color: $blue;
@@ -2232,6 +2233,143 @@
                     color: #7347c1;
                     left: 0;
                 }
+            }
+        }
+    }
+    .item__inner-list {
+        max-width: 845px;
+        width: 100%;
+        .new-product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 210px;
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .product__content-box {
+            padding: 0px 30px 0px 20px;
+        }
+        .one {
+            max-width: 260px;
+            width: 100%;
+        }
+        .two {
+            max-width: 206px;
+            width: 100%;
+            min-height: 150px;
+            font-size: 15px;
+            padding-right: 40px;
+            // margin: 30px 0;
+            border-left: 1px solid #ececec;
+            border-right: 1px solid #ececec;
+            a {
+                color: #6f7d8d;
+            }
+            a+a {
+                margin-top: 10px;
+            }
+        }
+        .three {
+            max-width: 150px;
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+        }
+        .product__content-title {
+            font-size: 18px;
+            @include f700;
+        }
+        .product__content-text {
+            font-size: 16px;
+            line-height: 30px;
+            color: #555555;
+            margin: 18px 0;
+        }
+        .item__content-link {
+            font-size: 15px;
+            color: #7347c1;
+            padding-left: 22px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../images/wordpress-icon.png);
+                width: 16px;
+                height: 16px;
+                color: #7347c1;
+                left: 0;
+                top: 0;
+            }
+        }
+        .content__box-inner__top,
+        .content__box-inner__bottom {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 8px;
+            }
+            a {
+                color: #000;
+            }
+        }
+        .content__box-inner__top {
+            padding-top: 15px;
+        }
+        .content__box-inner__bottom {
+            padding-bottom: 15px;
+        }
+        .likes {
+            padding-left: 23px;
+            color: #555;
+            position: relative;
+            margin-top: 25px;
+            &::before {
+                content: '\e813';
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                color: #7347c1;
+                left: 0;
+            }
+        }
+        .message {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 23px;
+            &::before {
+                content: '\e83f';
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                color: #7347c1;
+                left: 0;
+            }
+        }
+        span {
+            margin-left: 10px;
+            color: #6f7d8d;
+        }
+        .price {
+            width: 100px;
+            height: 30px;
+            background-color: #e6f1fd;
+            padding: 7px 20px;
+            color: $blue;
+            @include f500;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .basket {
+            color: $blue;
+            padding-left: 25px;
+            position: relative;
+            &::before {
+                content: '\e82e';
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                color: $blue;
+                left: 0;
             }
         }
     }
