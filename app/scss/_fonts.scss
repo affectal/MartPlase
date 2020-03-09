@@ -7,8 +7,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?amqdos');
-    src: url('../fonts/icomoon.eot?amqdos#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?amqdos') format('truetype'), url('../fonts/icomoon.woff?amqdos') format('woff'), url('../fonts/icomoon.svg?amqdos#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?vp5v8p');
+    src: url('../fonts/icomoon.eot?vp5v8p#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?vp5v8p') format('truetype'), url('../fonts/icomoon.woff?vp5v8p') format('woff'), url('../fonts/icomoon.svg?vp5v8p#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -29,48 +29,40 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-stargrade:before {
-    content: "\e900";
+.icon-th:before {
+    content: "\f00a";
 }
 
-.icon-star_half:before {
-    content: "\e901";
+.icon-th-list:before {
+    content: "\f00b";
 }
 
-.icon-star_outline:before {
-    content: "\e902";
-}
-
-.icon-check:before {
-    content: "\f00c";
-}
-
-.icon-twitter:before {
-    content: "\f099";
-}
-
-.icon-facebook1:before {
-    content: "\f09a";
-}
-
-.icon-facebook-f:before {
-    content: "\f09a";
-}
-
-.icon-pinterest:before {
-    content: "\f0d2";
-}
-
-.icon-linkedin:before {
-    content: "\f0e1";
-}
-
-.icon-dribbble:before {
-    content: "\f17d";
+.icon-checkmark:before {
+    content: "\ea10";
 }
 
 .icon-google:before {
-    content: "\f1a0";
+    content: "\ea88";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.icon-dribbble:before {
+    content: "\eaa7";
+}
+
+.icon-linkedin2:before {
+    content: "\eaca";
+}
+
+.icon-pinterest:before {
+    content: "\ead1";
 }
 
 @font-face {

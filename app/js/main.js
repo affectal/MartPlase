@@ -53,12 +53,15 @@ $(function() {
     $('.icon-grid').on('click', function() {
         $('.item__inner-grid').show();
         $('.item__inner-list').hide();
+        $('.icon-grid').addClass('active');
+        $('.icon-list').removeClass('active');
     });
 
     $('.icon-list').on('click', function() {
         $('.item__inner-list').show();
         $('.item__inner-grid').hide();
-
+        $('.icon-list').addClass('active');
+        $('.icon-grid').removeClass('active');
     });
 
 

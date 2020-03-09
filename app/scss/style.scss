@@ -32,13 +32,14 @@
             color: $blue;
         }
     }
-    &-btn {
+    &-link {
         width: 140px;
         height: 35px;
         font-size: 14px;
         font-weight: 400;
-        line-height: 28px;
-        border-radius: 28px;
+        padding: 9px 0;
+        text-align: center;
+        border-radius: 18px;
         background-color: $blue;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
         color: #fff;
@@ -1606,37 +1607,37 @@
         .facebook {
             background-color: #395799;
             &::before {
-                content: '\f09a';
+                content: '\ea90';
             }
         }
         .twitter {
             background-color: #19b2f5;
             &::before {
-                content: '\f099';
+                content: '\ea96';
             }
         }
         .google {
             background-color: #f05b44;
             &::before {
-                content: '\f1a0';
+                content: '\ea88';
             }
         }
         .pinterest {
             background-color: #9c0c1c;
             &::before {
-                content: '\f0d2';
+                content: '\ead1';
             }
         }
         .linkedin {
             background-color: #0da6be;
             &::before {
-                content: '\f0e1';
+                content: '\eaca';
             }
         }
         .dribbble {
             background-color: #ea4c89;
             &::before {
-                content: '\f17d';
+                content: '\eaa7';
             }
         }
     }
@@ -1758,7 +1759,7 @@
     #check {
         display: none;
         &:checked+label::before {
-            content: '\f00c';
+            content: '\ea10';
             font-family: 'icomoon';
             font-size: 12px;
             padding-top: 2.5px;
@@ -1991,9 +1992,9 @@
             font-size: 16px;
             color: #555;
             margin-right: 40px;
-        }
-        .active {
-            color: $blue;
+            &:active {
+                color: $blue;
+            }
         }
         .select__wrapper {
             position: relative;
@@ -2027,10 +2028,36 @@
             border: 1px solid #eceff2;
             border-radius: 4px;
             padding: 14px 20px;
-            img {
-                cursor: pointer;
+            font-family: 'icomoon';
+            .icon-grid {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                &::before {
+                    content: '\f00a';
+                    color: #555;
+                    font-size: 20px;
+                    position: absolute;
+                }
             }
-            img+img {
+            .icon-grid.active,
+            .icon-list.active {
+                &::before {
+                    color: $blue;
+                }
+            }
+            .icon-list {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                &::before {
+                    content: '\f00b';
+                    color: #555;
+                    font-size: 20px;
+                    position: absolute;
+                }
+            }
+            div+div {
                 margin-left: 15px;
             }
         }
