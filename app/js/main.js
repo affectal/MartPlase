@@ -50,6 +50,18 @@ $(function() {
     });
 
 
+    $('.icon-grid').on('click', function() {
+        $('.item__inner-grid').show();
+        $('.item__inner-list').hide();
+    });
+
+    $('.icon-list').on('click', function() {
+        $('.item__inner-list').show();
+        $('.item__inner-grid').hide();
+
+    });
+
+
 
     $('.feedback__inner').slick({
         nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
