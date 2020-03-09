@@ -46,7 +46,7 @@
         &:hover {
             background-color: #fff;
             color: $blue;
-            border: 1px solid $blue;
+            box-shadow: 1px 1px 15px -5px $blue;
         }
     }
     &-icon {
@@ -230,7 +230,7 @@
         }
         &:hover {
             background-color: transparent;
-            border: 1px solid $blue;
+            box-shadow: 1px 1px 15px -5px $blue;
         }
     }
     .header__search:hover::before {
@@ -371,7 +371,7 @@
             &:hover {
                 background-color: #fff;
                 color: $blue;
-                border: 1px solid $blue;
+                box-shadow: 1px 1px 25px -5px $blue;
             }
         }
     }
@@ -616,7 +616,7 @@
         color: #fff;
         font-size: 14px;
         &:hover {
-            border: 1px solid #7347c1;
+            box-shadow: 1px 1px 15px -5px #7347c1;
             background-color: #fff;
             color: #7347c1;
         }
@@ -744,7 +744,7 @@
             padding: 0 35px;
             &:hover {
                 background-color: #fff;
-                border: 1px solid $blue;
+                box-shadow: 1px 1px 10px -5px $blue;
                 color: $blue;
             }
         }
@@ -962,7 +962,7 @@
         color: #fff;
         font-size: 14px;
         &:hover {
-            border: 1px solid $blue;
+            box-shadow: 1px 1px 10px -5px $blue;
             background-color: #fff;
             color: $blue;
         }
@@ -1115,6 +1115,41 @@
             content: '\e831';
             color: #ff6a6d;
         }
+    }
+    .number1,
+    .number2,
+    .number3,
+    .number4,
+    .number5,
+    .number6 {
+        position: relative;
+        &::before {
+            position: absolute;
+            font-size: 48px;
+            font-family: "Quicksand-Regular";
+            // @include f300;
+            color: #e5eafe;
+            left: 20px;
+            top: 20px;
+        }
+    }
+    .number1::before {
+        content: '01';
+    }
+    .number2::before {
+        content: '02';
+    }
+    .number3::before {
+        content: '03';
+    }
+    .number4::before {
+        content: '04';
+    }
+    .number5::before {
+        content: '05';
+    }
+    .number6::before {
+        content: '06';
     }
     .top__item-title {
         font-size: 24px;
@@ -1270,7 +1305,7 @@
         font-size: 14px;
         font-weight: 700;
         &:hover {
-            border: 1px solid $blue;
+            box-shadow: 1px 1px 15px -5px $blue;
         }
     }
     .slick-prev {
@@ -1295,7 +1330,7 @@
         &:hover {
             background-color: transparent;
             color: $blue;
-            border: 1px solid $blue;
+            box-shadow: 1px 1px 10px -5px $blue;
         }
     }
 }
@@ -1560,7 +1595,7 @@
                         top: 0;
                         right: 0;
                         &:hover {
-                            border: 1px solid $blue;
+                            box-shadow: 1px 1px 10px -5px $blue;
                             background-color: #fff;
                             color: $blue;
                         }
@@ -1783,8 +1818,7 @@
         &:hover {
             background-color: #fff;
             color: $blue;
-            border: 1px solid $blue;
-            // box-shadow: 0px 0px 3px 0px $blue;
+            box-shadow: 1px 1px 10px -5px $blue;
         }
     }
     .login__btn {
@@ -1970,7 +2004,7 @@
         &:hover {
             background-color: #fff;
             color: $blue;
-            border: 1px solid $blue;
+            box-shadow: 1px 1px 10px -5px $blue;
         }
     }
 }
@@ -2201,7 +2235,7 @@
                 &:hover {
                     background-color: #fff;
                     color: $blue;
-                    border: 1px solid $blue;
+                    box-shadow: 1px 1px 10px -5px $blue;
                 }
             }
         }
