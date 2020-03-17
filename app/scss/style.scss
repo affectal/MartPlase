@@ -166,10 +166,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .menu {
-    position: relative;
     &__list {
         display: flex;
         justify-content: space-between;
@@ -185,7 +185,8 @@
                 color: $blue;
             }
         }
-        .drop-down-menu {
+        .drop-down-menu,
+        .pages {
             max-width: 270px;
             width: 100%;
             background-color: #fff;
@@ -195,34 +196,19 @@
             padding: 20px;
             box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
             position: absolute;
-            top: 80px;
             visibility: hidden;
             opacity: 0;
             transition: visibility ease 0s, opacity ease .7s;
-            .drop-down-link {
-                a {
-                    width: 100%;
-                    padding: 14px 0 14px 10px;
-                    color: #54667a;
-                    &:hover {
-                        background-color: $blue;
-                        border-radius: 4px;
-                        color: #fff;
-                    }
+            a {
+                width: 100%;
+                padding: 14px 0 14px 10px;
+                color: #54667a;
+                &:hover {
+                    background-color: $blue;
+                    border-radius: 4px;
+                    color: #fff;
                 }
             }
-        }
-        .wordpress {
-            left: 220px;
-        }
-        .all-products {
-            left: 75px;
-        }
-        .festures {
-            left: 345px;
-        }
-        .pages {
-            left: 450px;
         }
         .list-home:hover {
             .home {
@@ -238,6 +224,46 @@
         }
         .list-all-products:hover {
             .all-products {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .list-festures:hover {
+            .festures {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .pages {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1140px;
+            width: 100%;
+            padding: 20px 18px 20px 27px;
+            left: 0;
+            visibility: hidden;
+            .item-one {
+                width: 435px;
+            }
+            .item-two {
+                width: 161px;
+            }
+            .item-three {
+                width: 416px;
+            }
+            &__inner-title {
+                font-size: 16px;
+                @include f700;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #e8ebf0;
+            }
+            &__inner-list {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .list-pages:hover {
+            .pages {
                 visibility: visible;
                 opacity: 1;
             }
