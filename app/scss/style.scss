@@ -17,6 +17,7 @@
             max-width: 555px;
             width: 100%;
             padding-left: 25px;
+            position: relative;
         }
     }
     &-logo__img {
@@ -104,6 +105,19 @@
                 visibility: hidden;
                 opacity: 0;
                 transition: visibility ease 0s, opacity ease .7s;
+                right: 0;
+                &::before {
+                    content: '';
+                    background-image: url(../images/Polygon-top.png);
+                    width: 66px;
+                    height: 65px;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -32px;
+                    left: 5px;
+                }
                 .drop-down__inner.top-line {
                     border-top: 1px solid #e8ebf0;
                 }
@@ -194,6 +208,7 @@
                 position: relative;
                 transform: translateY(50%);
                 &::before {
+                    content: '\e818';
                     font-family: 'Linearicons-Free';
                     color: #7e8fa1;
                     position: absolute;
