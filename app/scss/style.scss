@@ -247,9 +247,10 @@
                                 justify-content: space-between;
                                 margin-bottom: 20px;
                                 font-size: 14px;
-                            }
-                            .drop-down__box-inner.envelope {
                                 color: $blue;
+                                &:visited {
+                                    color: #747a86;
+                                }
                             }
                         }
                     }
